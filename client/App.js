@@ -8,15 +8,15 @@ import { hot } from 'react-hot-loader'
 const App = () => {
   React.useEffect(() => {
     const jssStyles = document.querySelector('#jss-server-side')
-    if (jssStyles) {
+    if (jssStyles) {            
       jssStyles.parentNode.removeChild(jssStyles)
     }
   }, [])
   return (
   <BrowserRouter>
       <ThemeProvider theme={theme}>
-        <MainRouter/>
-      </ThemeProvider>
+        <MainRouter/>              
+      </ThemeProvider>          
   </BrowserRouter>
 )}
 
